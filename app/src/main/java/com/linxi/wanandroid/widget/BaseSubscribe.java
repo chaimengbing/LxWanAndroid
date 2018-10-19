@@ -2,6 +2,7 @@ package com.linxi.wanandroid.widget;
 
 import android.text.TextUtils;
 
+import com.linxi.wanandroid.R;
 import com.linxi.wanandroid.app.LxWanAndroidApplication;
 import com.linxi.wanandroid.base.view.AbstractView;
 import com.linxi.wanandroid.core.http.exception.ServerException;

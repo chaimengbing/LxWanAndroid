@@ -6,7 +6,7 @@ import com.linxi.wanandroid.core.dao.HistoryData;
 import java.util.Iterator;
 import java.util.List;
 
-
+import javax.inject.Inject;
 
 
 /**

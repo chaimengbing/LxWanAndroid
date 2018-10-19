@@ -3,6 +3,8 @@ package com.linxi.wanandroid.base.presenter;
 
 import com.linxi.wanandroid.base.view.AbstractView;
 
+import io.reactivex.disposables.Disposable;
+
 /**
  * Presenter 基类
  *
@@ -29,7 +31,7 @@ public interface AbstractPresenter<T extends AbstractView> {
      *
      * @param disposable Disposable
      */
-//    void addRxBindingSubscribe(Disposable disposable);
+    void addRxBindingSubscribe(Disposable disposable);
 
     /**
      * Get night mode state

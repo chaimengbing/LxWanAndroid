@@ -2,6 +2,7 @@ package com.linxi.wanandroid.base.presenter;
 
 
 import com.linxi.wanandroid.base.view.AbstractView;
+import com.linxi.wanandroid.core.DataManager;
 
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
