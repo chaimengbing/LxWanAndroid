@@ -4,6 +4,8 @@ import android.app.Application;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.linxi.wanandroid.core.dao.DaoMaster;
+import com.linxi.wanandroid.core.dao.DaoSession;
 import com.squareup.leakcanary.RefWatcher;
 
 public class LxWanAndroidApplication extends Application {
