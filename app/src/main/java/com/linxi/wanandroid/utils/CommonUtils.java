@@ -12,14 +12,15 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.linxi.wanandroid.R;
+import com.linxi.wanandroid.app.Constants;
+import com.linxi.wanandroid.app.LxWanAndroidApplication;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Random;
 
-import json.chao.com.wanandroid.R;
-import json.chao.com.wanandroid.app.Constants;
-import json.chao.com.wanandroid.app.WanAndroidApp;
 
 /**
  * @author quchao
@@ -32,7 +33,7 @@ public class CommonUtils {
      * 根据手机的分辨率从 dp 的单位 转成为 px(像素)
      */
     public static int dp2px(float dpValue) {
-        final float scale = WanAndroidApp.getInstance().getResources().getDisplayMetrics().density;
+        final float scale = LxWanAndroidApplication.getInstance().getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale + 0.5f);
     }
 
@@ -92,7 +93,7 @@ public class CommonUtils {
      * 检查是否有可用网络
      */
     public static boolean isNetworkConnected() {
-        ConnectivityManager connectivityManager = (ConnectivityManager) WanAndroidApp.getInstance().getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager connectivityManager = (ConnectivityManager) LxWanAndroidApplication.getInstance().getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
         assert connectivityManager != null;
         return connectivityManager.getActiveNetworkInfo() != null;
     }

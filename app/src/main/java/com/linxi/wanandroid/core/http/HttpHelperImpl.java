@@ -15,6 +15,8 @@ import com.linxi.wanandroid.core.http.api.GeeksApis;
 import java.util.List;
 
 
+import javax.inject.Inject;
+
 import io.reactivex.Observable;
 
 

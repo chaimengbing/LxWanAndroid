@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.text.TextUtils;
 
+import com.linxi.wanandroid.utils.CommonUtils;
 import com.orhanobut.logger.FormatStrategy;
 import com.orhanobut.logger.LogStrategy;
 
@@ -13,7 +14,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import json.chao.com.wanandroid.utils.CommonUtils;
 
 import static com.orhanobut.logger.Logger.ASSERT;
 import static com.orhanobut.logger.Logger.DEBUG;

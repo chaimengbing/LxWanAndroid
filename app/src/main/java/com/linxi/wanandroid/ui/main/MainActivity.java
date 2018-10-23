@@ -1,5 +1,7 @@
 package com.linxi.wanandroid.ui.main;
 
+import android.text.TextUtils;
+
 import com.linxi.wanandroid.R;
 import com.linxi.wanandroid.base.activity.BaseActivity;
 import com.linxi.wanandroid.contract.main.MainContract;
@@ -16,7 +18,17 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
 
     @Override
     protected void initToolbar() {
-
+        String res = "";
+        String result = "00000000";
+        if(result.endsWith("\n")){
+            if (TextUtils.isEmpty(res)){
+                //往外发result
+            }else {
+                //往外发res
+            }
+        }else {
+            res +=result;
+        }
     }
 
     @Override

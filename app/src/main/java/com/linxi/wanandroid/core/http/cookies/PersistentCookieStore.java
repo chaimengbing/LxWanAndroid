@@ -18,7 +18,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import json.chao.com.wanandroid.app.WanAndroidApp;
 import okhttp3.Cookie;
 import okhttp3.HttpUrl;
 

@@ -1,14 +1,15 @@
 package com.linxi.wanandroid.utils;
 
+import com.linxi.wanandroid.core.bean.BaseResponse;
+import com.linxi.wanandroid.core.bean.main.collect.FeedArticleListData;
+import com.linxi.wanandroid.core.http.exception.OtherException;
+
 import io.reactivex.FlowableTransformer;
 import io.reactivex.Observable;
 import io.reactivex.ObservableTransformer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
-import json.chao.com.wanandroid.core.bean.BaseResponse;
-import json.chao.com.wanandroid.core.bean.main.collect.FeedArticleListData;
-import json.chao.com.wanandroid.core.http.exception.OtherException;
 
 /**
  * Created by chao.qu at 2017/10/20

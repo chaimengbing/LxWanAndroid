@@ -1,7 +1,9 @@
 package com.linxi.wanandroid.core.db;
 
 import com.linxi.wanandroid.app.LxWanAndroidApplication;
+import com.linxi.wanandroid.core.dao.DaoSession;
 import com.linxi.wanandroid.core.dao.HistoryData;
+import com.linxi.wanandroid.core.dao.HistoryDataDao;
 
 import java.util.Iterator;
 import java.util.List;

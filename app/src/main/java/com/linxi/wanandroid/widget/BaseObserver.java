@@ -2,12 +2,13 @@ package com.linxi.wanandroid.widget;
 
 import android.text.TextUtils;
 
+import com.linxi.wanandroid.R;
+import com.linxi.wanandroid.app.LxWanAndroidApplication;
+import com.linxi.wanandroid.base.view.AbstractView;
+import com.linxi.wanandroid.core.http.exception.ServerException;
+import com.linxi.wanandroid.utils.LogHelper;
+
 import io.reactivex.observers.ResourceObserver;
-import json.chao.com.wanandroid.R;
-import json.chao.com.wanandroid.app.WanAndroidApp;
-import json.chao.com.wanandroid.base.view.AbstractView;
-import json.chao.com.wanandroid.core.http.exception.ServerException;
-import json.chao.com.wanandroid.utils.LogHelper;
 import retrofit2.HttpException;
 
 /**
@@ -58,9 +59,9 @@ public abstract class BaseObserver<T> extends ResourceObserver<T> {
         } else if (e instanceof ServerException) {
             mView.showErrorMsg(e.toString());
         } else if (e instanceof HttpException) {
-                mView.showErrorMsg(WanAndroidApp.getInstance().getString(R.string.http_error));
+                mView.showErrorMsg(LxWanAndroidApplication.getInstance().getString(R.string.http_error));
         } else {
-            mView.showErrorMsg(WanAndroidApp.getInstance().getString(R.string.unKnown_error));
+            mView.showErrorMsg(LxWanAndroidApplication.getInstance().getString(R.string.unKnown_error));
             LogHelper.d(e.toString());
         }
         if (isShowError) {

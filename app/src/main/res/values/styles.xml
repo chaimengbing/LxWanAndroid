@@ -48,11 +48,11 @@
         <item name="android:textSize">@dimen/sp_16</item>
     </style>
 
-    <!--<style name="myCorDialog" parent="android:style/Theme.Dialog">-->
-        <!--<item name="android:windowBackground">@drawable/dialog_corner_bg</item> &lt;!&ndash; 背景透明 &ndash;&gt;-->
-        <!--<item name="android:windowNoTitle">true</item> &lt;!&ndash; 没有标题 &ndash;&gt;-->
-        <!--<item name="android:backgroundDimEnabled">true</item> &lt;!&ndash; 背景模糊 &ndash;&gt;-->
-    <!--</style>-->
+    <style name="myCorDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_corner_bg</item> <!-- 背景透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 没有标题 -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 背景模糊 -->
+    </style>
 
     <style name="DialogButtonText">
         <item name="android:textStyle">bold</item>
@@ -65,7 +65,7 @@
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-   <!-- <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+   <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
         <item name="tabMaxWidth">@dimen/dp_200</item>
         <item name="tabIndicatorColor">@color/deep_red</item>
         <item name="tabIndicatorHeight">@dimen/dp_1</item>
@@ -75,13 +75,13 @@
         <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
         <item name="tabSelectedTextColor">@color/light_deep_red</item>
         <item name="tabMode">scrollable</item>
-    </style>-->
+    </style>
 
-    <!--<style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">-->
-        <!--<item name="android:textSize">@dimen/sp_14</item>-->
-        <!--<item name="android:textColor">@color/grey</item>-->
-        <!--<item name="textAllCaps">true</item>-->
-    <!--</style>-->
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">-->
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="textAllCaps">true</item>
+    </style>
 
     <style name="DialogStyle" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
